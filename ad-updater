@@ -85,23 +85,6 @@
 			</style>
 	</head>
 	<body>
-		 <div class="dropdown">
-      <button onclick="myFunction()" class="dropbtn">Information</button>
-      <div id="Content" class="dropdown-content">
-	      <a href="#"><p1>Info</p1></a>
-		      <a href="#"><p5>Useable version (v1.6 release) expected to be released 4/22/2022 6-7pm EDT</p5></a>
-        <a href="#"><p1>Updates</p1></a>
-        <a href="#"><p5>Version 1.5 brings new dropdown menus to existance. Our next plans are to make a toggleable contract status AND add text boxes so you can add your own info without the need of a text pad editor.</p5></a>
-        
-             <a href="#"><p1>Format</p1></a>
-        <a href="#"><p5>The usernames are discord usernames. the format is as following:
-Contract: [Discord Name h1]
-Details: [Contract Details p2 br]
-		Ads Published: [Total number of ads posted by end of contract, Live update p1 br br]</p5></a>
-        <a href="#"><p1>Contributors</p1></a>
-	      <a href="#"><p5>notyou_lmao, starbrat</p5></a>
-      </div>
-    </div>
 		<h1 class="center">REMINDER 15-30 ads/hour Minimum, the more you do the better chance of a tip.</h1>
 		<br>
 		<center><button id="button">Published another ad</button></center>
