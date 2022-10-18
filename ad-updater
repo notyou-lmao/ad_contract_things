@@ -1,0 +1,154 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Ad_Contract_Tally_v1.1</title>
+		<meta charset="utf-8">
+
+		<style type="text/css">
+			body {
+				background-color:black;
+				color: white;
+				text-align:left;
+				margin-left:auto;
+				margin-right:auto;
+			}
+			h1 {
+				color:#CC5500;
+				font-size:38px;
+			}
+			h2 {
+				color:#8b0000;
+				font-size:24px;
+			}
+			p1 {
+				color:#ADD8E6;
+				font-size:24px;
+			}
+			p2 {
+				color:white;
+			    font-size:22px;
+			}
+			p3 {
+				color:red;
+				font-size:38px;
+			}
+			p4 {
+				color:#90EE90;
+				font-size:38px;
+			}
+			p5 {
+				color:#FFD580;
+				font-size:22px;
+				font-family:arial;
+			}
+    		a {
+				color:#ffcccb;
+			}
+			.center {
+				text-align:center;
+				margin-right:auto;
+				margin-left:auto;
+			}
+	.dropbtn {
+        background-color:#222222;
+        color:white;
+        padding:20px;
+        font-size:20px;
+        border:none;
+        cursor:pointer;
+      }
+      .dropbtn:hover, .dropbtn:focus {
+        background-color:#999999;
+      }
+      .dropdown {
+        position:relative;
+        display:inline-block;
+      }
+      .dropdown-content {
+        display:none;
+        position:absolute;
+        background-color:#777777;
+        min-width:1000px;
+        box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      .dropdown-content a {
+        color:black;
+        padding:12px 16px;
+        text-decoration:none;
+        display:block;
+        cursor:default;
+      }
+      .show {display:block;}
+			</style>
+	</head>
+	<body>
+		 <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Information</button>
+      <div id="Content" class="dropdown-content">
+	      <a href="#"><p1>Info</p1></a>
+		      <a href="#"><p5>Useable version (v1.6 release) expected to be released 4/22/2022 6-7pm EDT</p5></a>
+        <a href="#"><p1>Updates</p1></a>
+        <a href="#"><p5>Version 1.5 brings new dropdown menus to existance. Our next plans are to make a toggleable contract status AND add text boxes so you can add your own info without the need of a text pad editor.</p5></a>
+        
+             <a href="#"><p1>Format</p1></a>
+        <a href="#"><p5>The usernames are discord usernames. the format is as following:
+Contract: [Discord Name h1]
+Details: [Contract Details p2 br]
+		Ads Published: [Total number of ads posted by end of contract, Live update p1 br br]</p5></a>
+        <a href="#"><p1>Contributors</p1></a>
+	      <a href="#"><p5>notyou_lmao, starbrat</p5></a>
+      </div>
+    </div>
+		<h1 class="center">REMINDER 15-30 ads/hour Minimum, the more you do the better chance of a tip.</h1>
+		<br>
+		<center><button id="button">Published another ad</button></center>
+	<script type="text/javascript">
+		document.addEventListener("DOMContentLoaded", function(event) { 
+			
+			let countNumber = 0;
+
+			let counter = document.getElementById("counter");
+			let button = document.getElementById("button");
+
+
+			button.addEventListener("click", function(event) {
+
+				countNumber++;
+
+				counter.innerHTML = countNumber;
+			});
+		});
+		function myFunction() {
+      document.getElementById("Content").classList.toggle("show");
+    }
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementByClassName("dropdown-content");
+        var i;
+        for (i=0;i<dropdowns.length; i++) {
+          var openDropDown=dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+
+</script>
+	<br>
+		<h2 class="center">Please keep Torn anti-spam rules in mind.</h2>
+			<br>
+	<h1>Contract: </h1>
+		<p2>Contract Run Length: <br>
+Requestor ID:  <br>
+Ad:  <br><br>
+
+		</p2>
+		
+		<p1>Ads posted: <span id="counter">N/A</span></p1>
+		
+			</body>
+</html>
